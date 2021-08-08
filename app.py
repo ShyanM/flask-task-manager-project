@@ -97,6 +97,7 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
+
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
     if request.method == "POST":
